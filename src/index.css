@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.Container {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.Header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: #646681;
+}
+
+.Todo-Wrapper {
+  margin-top: 20px;
+  min-width: 70%;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ecedf6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Todo-List {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  border-radius: 7px;
+}
+
+.Form {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Form-Input-Button {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  height: 45px;
+  line-height: 45px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: #0070f3;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  :hover {
+    background: rgba(0, 118, 255, 0.9);
+    box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+  }
+}
+
+input {
+  position: relative;
+  cursor: text;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 16px;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #d6d6e7;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color: rgb(35, 38, 59);
+  box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+  overflow: hidden;
+  transition: all 100ms ease-in-out;
+  :focus {
+    border-color: #3c4fe0;
+    box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+  }
+}
+
+.delete-button {
+  width: 30px;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
